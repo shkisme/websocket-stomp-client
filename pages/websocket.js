@@ -13,7 +13,7 @@ const IndexPage = () => {
             },
             onConnect: () => {
                 console.log('Connected to WebSocket');
-                stompClient.subscribe('/ws/v1/topic/calls/050-0000-0000', (message) => {
+                stompClient.subscribe('/ws/v1/topic/call-store/carrangcarrang', (message) => {
                     console.log('Received message:', message.body);
                 });
             },
